@@ -2,11 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import { ShowSidebarProvider } from './hooks/ShowSidebar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ShowSidebarProvider>
+      <App />
+    </ShowSidebarProvider>
   </React.StrictMode>
 );
 

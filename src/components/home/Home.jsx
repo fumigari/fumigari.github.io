@@ -1,6 +1,10 @@
 import React from 'react';
+import Typewriter from "typewriter-effect";
 import './Home.css';
 import Avatar from "../../assets/avatar-1.png";
+import HeaderSocials from './components/HeaderSocials';
+import ScrollDown from './components/ScrollDown';
+import Shapes from './components/Shapes';
 
 const Home = () => {
 	return (
@@ -10,16 +14,33 @@ const Home = () => {
 					<div className="intro">
 						<img src={Avatar} alt="Ari avatar" className='avatar mb-4' />
 						<h1 className='mb-2 mt-0'>Ari Ferreira</h1>
-						<p>
-							I'm a
-							<span class="typed-text"></span>
-							<span class="cursor">&nbsp;</span>
-						</p>
+						<div className='role'>
+							I'm a&nbsp;<Typewriter
+ 								onInit={(typewriter) => {
+									typewriter.pauseFor(1000);
+                }}
+								
+								options={{
+									strings: ["Front-End Developer", "Back-End Developer"],
+									autoStart: true,
+									loop: true,
+								}}
+            />
+						</div>
+
+						<HeaderSocials />
+
+						<div className='mt-4'>
+							<a href="#contact" className="btn btn-default">Hire Me</a>
+						</div>
 					</div>
+					<ScrollDown />
+					
+					<Shapes />
 				</div>
 			</section>
 		</div>
-	)
-}
+	);
+};
 
 export default Home;

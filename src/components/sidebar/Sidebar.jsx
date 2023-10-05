@@ -1,26 +1,30 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import "./Sidebar.css";
 import Logo from "../../assets/logo.svg";
+import { ShowSidebarContext } from '../../hooks/ShowSidebar';
 
 const Sidebar = () => {
+	const { openSidebar, showSidebar } = useContext(ShowSidebarContext);
+
 	return (
+		// <div className='dale'>
 		<>
-		<header className='mobile__header'>
+		<header className={`mobile__header ` +  openSidebar}>
 			<div className="container">
 				<div className="menu__icon d-inline-flex mr-4">
-					<button>
+					<button onClick={showSidebar}>
 						<span></span>
 					</button>
 				</div>
-				<div className="site__logo">
+				{/* <div className="site__logo">
 					<a href="#home" className="logo">
 						<img src={Logo} alt="Logo" />
 					</a>
-				</div>
+				</div> */}
 			</div>
 		</header>
 
-		<header className="desktop__header d-flex align-items-start flex-column light">
+		<header className={`desktop__header d-flex align-items-start flex-column ` + openSidebar}>
 			<div className="site__logo">
 				<a href="#home" className="logo">
 					<img src={Logo} alt="Logo" />
@@ -31,7 +35,7 @@ const Sidebar = () => {
 				<ul className="nav__menu scrollspy">
 					<li className="nav__item">
 						<a href="#home" className="nav__link">
-							<i class="icon-home"></i>
+							<i className="icon-home"></i>
 						</a>
 					</li>
 
@@ -73,6 +77,7 @@ const Sidebar = () => {
 			</div>
 		</header>
 		</>
+		// </div>
 	)
 }
 
