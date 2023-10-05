@@ -1,0 +1,9 @@
+.main {
+	margin-left: 110px;
+  transition: all .3s ease-in-out;
+}
+@media only screen and (max-width: 991px) {
+	.main {
+    margin-left: 0;
+	}
+}

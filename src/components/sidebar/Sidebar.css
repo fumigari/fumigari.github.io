@@ -1,0 +1,151 @@
+.mobile__header {
+	background: var(--background-color);
+	display: none;
+	padding: 10px 0;
+	transition: all .3s ease-in-out;
+}
+
+@media only screen and (max-width: 991px){
+	.mobile__header {
+    display: block;
+	}
+}
+
+.mobile__header .menu__icon button {
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+	outline: 0;
+	height: 33px;
+	width: 33px;
+}
+
+.mobile__header .menu__icon span {
+	display: block;
+	background: #353353;
+	border-radius: 5px;
+	height: 4px;
+	position: relative;
+	width: 30px;
+}
+
+.mobile__header .menu__icon span:after, 
+.mobile__header .menu__icon span:before {
+	content: "";
+	background: #353353;
+	display: block;
+	border-radius: 5px;
+	height: 4px;
+	position: absolute;
+	width: 30px;
+}
+
+.mobile__header .menu__icon span:before {
+	top: -10px;
+}
+
+.mobile__header .menu__icon span:after {
+	top: 10px;
+}
+
+.mr-4, .mx-4 {
+	margin-right: 1.5rem!important;
+}
+
+.d-inline-flex {
+	display: inline-flex!important;
+}
+
+.mobile__header .site__logo {
+	display: inline-block;
+}
+
+.mobile__header .site__logo img {
+	max-height: 30px;
+}
+
+.desktop__header {
+	color: #fff;
+	border-right: 1px solid rgba(0,0,0,.05);
+	background: var(--background-color);
+	padding: 40px;
+	position: fixed;
+	left: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 100vh;
+	min-height: 100vh;
+	top: 0;
+	width: 110px;
+	z-index: 1;
+	transform: translateX(0);
+	transition: all .3s ease-in-out;
+}
+
+@media only screen and (max-width: 991px) {
+	.desktop__header {
+    transform: translateX(-110px);
+	}
+}
+
+.desktop__header .site__logo {
+	height: 10px;
+}
+
+.align-items-start {
+	align-items: flex-start!important;
+}
+
+.flex-column {
+	flex-direction: column!important;
+}
+
+.d-flex {
+	display: flex!important;
+}
+
+.desktop__header .nav__menu {
+	list-style: none;
+	padding: 0;
+	margin-top: 100px;
+	margin-bottom: 0;
+}
+
+.nav__item {
+	padding: 8px 0;
+	position: relative;
+	list-style: none;
+	transition: all .2s ease-in-out;
+}
+
+.nav__link { 
+	font-family: "Rubik",sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	width: 100%;
+	text-decoration: none;
+	position: relative;
+	cursor: pointer;
+}
+
+.nav__link i {
+	color: #353353;
+	opacity: 1;
+}
+
+.footer {
+	margin-top: auto;
+	position: relative;
+}
+
+.copyright {
+	color: #9c9ab3;
+	font-size: 14px;
+	transform: rotate(-180deg);
+	-webkit-writing-mode: vertical-rl;
+	-ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+	white-space: nowrap;
+	display: inline-block;
+	overflow: visible;
+}

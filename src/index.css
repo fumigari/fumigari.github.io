@@ -1,0 +1,138 @@
+:root {
+	--blue: #007bff;
+	--indigo: #6610f2;
+	--purple: #6f42c1;
+	--pink: #e83e8c;
+	--red: #dc3545;
+	--orange: #fd7e14;
+	--yellow: #ffc107;
+	--green: #28a745;
+	--teal: #20c997;
+	--cyan: #17a2b8;
+	--white: #fff;
+	--gray: #6c757d;
+	--gray-dark: #343a40;
+	--primary: #007bff;
+	--secondary: #6c757d;
+	--success: #28a745;
+	--info: #17a2b8;
+	--warning: #ffc107;
+	--danger: #dc3545;
+	--light: #f8f9fa;
+	--dark: #343a40;
+	--background-color: #f9f9ff;
+	--breakpoint-0: 0;
+	--breakpoint-576: 576px;
+	--breakpoint-768: 768px;
+	--breakpoint-992: 992px;
+	--breakpoint-1200: 1200px;
+	--font-family-sans-serif: 'Rubik', sans-serif;
+	--font-family-monospace: 'Space Mono', monospace;
+}
+
+body {
+	margin: 0;
+	font-weight: 400;
+	text-align: left;
+	color: #5e5c7f;
+	background: var(--background-color);
+	font-family: "Rubik",sans-serif;
+	font-size: 16px;
+	line-height: 1.7;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	font-family: sans-serif;
+  line-height: 1.15;
+	scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*, :after, :before {
+	box-sizing: border-box;
+}
+
+.container, 
+.container-fluid, 
+.container-lg, 
+.container-md, 
+.container-sm, 
+.container-xl {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media only screen and (min-width: 576px) {
+	.container, .container-sm {
+    max-width: 540px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.container {
+    max-width: 920px;
+	}
+	
+	.container-md, .container-sm {
+    max-width: 720px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.container, .container-lg, .container-md, .container-sm {
+    max-width: 960px;
+	}
+}
+
+button, input, optgroup, select, textarea {
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+	cursor: pointer;
+}
+
+[type=button], [type=reset], [type=submit], button {
+	appearance: button;
+	-webkit-appearance: button;
+}
+
+button, select {
+	text-transform: none;
+}
+button, input {
+	overflow: visible;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+img, svg {
+	vertical-align: middle;
+}
+
+img {
+	border-style: none;
+}
+
+section {
+	padding-top: 110px;
+	position: relative;
+}
