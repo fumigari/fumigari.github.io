@@ -5,6 +5,10 @@
 	height: 100vh; 
 } */
 
+.img__logo {
+	width: 100px;
+}
+
 .mobile__header {
 	background: var(--background-color);
 	display: none;
@@ -112,6 +116,7 @@
 @media only screen and (max-width: 991px) {
 	.desktop__header {
     transform: translateX(-110px);
+		height: 100shv;
 	}
 }
 
