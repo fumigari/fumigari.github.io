@@ -4,7 +4,6 @@ import './App.css';
 import Home from './components/home/Home';
 import Sidebar from './components/sidebar/Sidebar';
 import { ShowSidebarContext } from './hooks/ShowSidebar';
-import InProgress from './assets/in-progress.png';
 
 function App() {
   const { openSidebar } = useContext(ShowSidebarContext);
@@ -13,7 +12,6 @@ function App() {
     <>
       <Sidebar />
       <main className={`main ` + openSidebar}>
-        <img src={InProgress} alt='work in progress sign' className='in-progress' />
         <Home />
       </main>
     </>

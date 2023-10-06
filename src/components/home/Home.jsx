@@ -5,10 +5,15 @@ import Avatar from "../../assets/avatar-1.png";
 import HeaderSocials from './components/HeaderSocials';
 import ScrollDown from './components/ScrollDown';
 import Shapes from './components/Shapes';
+import InProgress from '../../assets/in-progress.png';
+
 
 const Home = () => {
 	return (
 		<div className="section__home">
+			<div className='img__div'>
+				<img src={InProgress} alt='work in progress sign' className='in-progress' />
+			</div>
 			<section className="home d-flex align-items-center light">
 				<div className="container">
 					<div className="intro">
