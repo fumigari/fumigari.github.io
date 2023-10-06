@@ -1,13 +1,12 @@
 import React, { useContext } from 'react';
 import "./Sidebar.css";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/logo.png";
 import { ShowSidebarContext } from '../../hooks/ShowSidebar';
 
 const Sidebar = () => {
 	const { openSidebar, showSidebar } = useContext(ShowSidebarContext);
 
 	return (
-		// <div className='dale'>
 		<>
 		<header className={`mobile__header ` +  openSidebar}>
 			<div className="container">
@@ -27,7 +26,7 @@ const Sidebar = () => {
 		<header className={`desktop__header d-flex align-items-start flex-column ` + openSidebar}>
 			<div className="site__logo">
 				<a href="#home" className="logo">
-					<img src={Logo} alt="Logo" />
+					<img src={Logo} alt="Logo" className="img__logo"/>
 				</a>
 			</div>
 
@@ -77,7 +76,6 @@ const Sidebar = () => {
 			</div>
 		</header>
 		</>
-		// </div>
 	)
 }
 
