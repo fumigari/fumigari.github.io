@@ -250,3 +250,12 @@ h1 {
 
 	transform: translate(-6.95679px, -1.62346px);
 }
+
+.img__div{
+	height: 110px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	z-index: 2;
+}
