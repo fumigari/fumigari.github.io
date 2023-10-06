@@ -12,3 +12,11 @@
 	opacity: .8;
 	transform: translateX(110px);
 }
+
+.in-progress {
+	height: 157px;
+	right: 570px;
+	display: flex;
+	z-index: 2;
+	position: fixed;
+}
