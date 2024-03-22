@@ -7,6 +7,10 @@ const ScrollContainer = styled.div`
 	left: 0;
 	width: 100%;
   z-index: 1;
+
+	@media only screen and (max-width: 768px) {
+		bottom: 40px;
+	}
 `;
 
 const Button = styled.a`

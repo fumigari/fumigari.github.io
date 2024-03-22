@@ -12,6 +12,10 @@ const HomeSection = styled.section`
 	align-items: center;
 	padding: 0;
   height: 90vh;
+
+	@media only screen and (max-width: 768px) {
+		height: 90svh;
+	}
 `;
 
 const HomeContainer = styled.div`
