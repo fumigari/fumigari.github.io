@@ -21,7 +21,7 @@ const Image = styled.img`
 const WIP = () => {
 	return (
 		<Div>
-			<h1>Work in progress, sorry.</h1>
+			<h1>Please, be patient.</h1>
 			<Image src={hamster} alt="crying hamster meme" />
 		</Div>
 	)
