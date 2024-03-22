@@ -29,9 +29,9 @@ const HeaderDiv = styled.div`
 	justify-content: space-between;
 	align-items: center;
 
-	@media only screen and (max-width: 767px) {
-		flex-direction: row;
+	@media only screen and (max-width: 768px) {
 		justify-content: space-around;
+		flex-direction: row;
 	}
 `;
 

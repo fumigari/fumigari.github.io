@@ -12,6 +12,10 @@ const Div = styled.div`
 
 const Image = styled.img`
 	width: 400px;
+
+	@media only screen and (max-width: 767px) {
+		width: 70vw;
+	}
 `;
 
 const WIP = () => {
