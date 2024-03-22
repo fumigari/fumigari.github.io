@@ -20,7 +20,7 @@ export const userData = {
 	],
 	about: {
 		title:
-			"I'm a software developer .....",
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum fermentum ex eget placerat. Pellentesque vestibulum ac neque ac vulputate. Fusce facilisis quam vel consequat varius.",
 		description: [
 			`I'm Ari, a developer based in Recife/Brazil 
 			passionate about turning ideas into creative solutions. 
