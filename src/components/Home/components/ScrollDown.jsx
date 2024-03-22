@@ -30,7 +30,7 @@ const Mouse = styled.span`
 	border-color: var(--dark-purple);
   border-radius: 16px;
   display: block;
-  margin: auto auto 10px auto;
+  margin: 10px auto auto;
   height: 26px;
   position: relative;
   width: 20px;
@@ -74,10 +74,10 @@ const ScrollDown = () => {
 	return (
 		<ScrollContainer>
 			<Button href="#about">
+				<ScrollName>Scroll Down</ScrollName>
 				<Mouse>
 					<Wheel />
 				</Mouse>
-				<ScrollName>Scroll Down</ScrollName>
 			</Button>
 		</ScrollContainer>
 	)
