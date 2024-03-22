@@ -63,7 +63,7 @@ const Header = () => {
 		<HeaderContainer>
 			<HeaderDiv>
 				<LogoDiv>
-					<LinkStyed href="/">
+					<LinkStyed to="/" href="/">
 						<LogoImage/>
 					</LinkStyed>
 				</LogoDiv>
