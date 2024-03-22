@@ -26,7 +26,7 @@ const HeaderContainer = styled.header`
 
 const HeaderDiv = styled.div`
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 
 	@media only screen and (max-width: 767px) {
