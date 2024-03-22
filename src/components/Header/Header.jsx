@@ -31,6 +31,7 @@ const HeaderDiv = styled.div`
 
 	@media only screen and (max-width: 767px) {
 		flex-direction: row;
+		justify-content: space-around;
 	}
 `;
 
