@@ -1,0 +1,20 @@
+<svg id="uuid-6833e2de-dc4d-404c-a08b-4fedbd69d342" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 450">
+    <style>
+      .uuid-7e2f04e8-8b3a-4516-85d1-9196f6b86501 {
+        fill: #282641;
+      }
+
+      .uuid-f47465f3-f86f-47b1-98aa-375438269296 {
+        fill: #f05063;
+        letter-spacing: 0em;
+      }
+
+      .uuid-268dde45-df02-4a29-abe7-038fe984fd82 {
+        font-family: Rubik-Bold, Rubik;
+        font-size: 500px;
+        font-variation-settings: &apos;wght&apos; 700;
+        font-weight: 700;
+      }
+    </style>
+  <text class="uuid-268dde45-df02-4a29-abe7-038fe984fd82" transform="translate(0 400)"><tspan class="uuid-7e2f04e8-8b3a-4516-85d1-9196f6b86501" x="0" y="0">A</tspan><tspan class="uuid-f47465f3-f86f-47b1-98aa-375438269296" x="350" y="0">.</tspan></text>
+</svg>

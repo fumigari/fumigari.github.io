@@ -1,0 +1,80 @@
+@import '~simple-line-icons/css/simple-line-icons.css';
+
+:root {
+  --white: hsl(180, 0%, 100%);
+  --light: hsl(240, 16%, 94%);
+  --light-gray: hsl(240, 100%, 97%);
+  --red: hsl(354, 100%, 65%);
+  --yellow: hsl(43, 100%, 68%);
+  --light-purple: hsl(240,100%,98.8%); 
+  --purple: hsl(240, 70%, 66%);
+  --dark-purple: hsl(244, 18%, 32%);
+  --black-purple: hsl(244, 27%, 20%); 
+  --font-family-sans-serif: 'Rubik', sans-serif;
+	--font-family-monospace: 'Space Mono', monospace;
+}
+
+body {
+  margin: 0;
+  color: var(--black-purple);
+	background: var(--light-purple);
+	font-family: "Rubik",sans-serif;
+  font-size: 1rem;
+	line-height: 1.5rem;
+  font-weight: 700;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	font-family: sans-serif;
+  line-height: 1.15;
+	scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: var(--black-purple);
+  outline: 0;
+  transition: all .3s ease-in-out;
+}
+
+[type=button], [type=reset], [type=submit], button {
+	appearance: button;
+	-webkit-appearance: button;
+}
+
+button { 
+  border-radius: 30px;
+  border-style: hidden;
+	font-family: "Rubik",sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	overflow: hidden;
+	line-height: 1;
+	padding: 12px 32px;
+	text-decoration: none;
+	color: var(--white);
+	background: var(--red);
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+  cursor: pointer;
+  z-index: 1;
+}
+
+@keyframes button-push {
+  50% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+button:hover {
+  animation: button-push 0.3s linear 1;
+}
